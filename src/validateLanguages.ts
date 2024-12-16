@@ -56,9 +56,11 @@ function validateTranslations() {
 
     Object.keys(en.translation).forEach(module => {
         spinner.text = `Scanning ${chalk.blue(module)} module...`;
+        // @ts-ignore
         if (!tr.translation[module]) {
             structuralErrors.push(`Missing entire module: ${module}`);
         } else {
+            // @ts-ignore
             checkKeys(en.translation[module], tr.translation[module], `translation.${module}`);
         }
     });
