@@ -2,7 +2,7 @@
   "type": "module",
   "name": "@fastrp/locales",
   "description": "Localization package for FastV - A comprehensive i18n solution",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "exports": {
     ".": {
       "import": "./dist/index.js",
