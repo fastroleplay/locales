@@ -1,20 +1,38 @@
-name: Publish Package to GitHub Packages
+name: Auto Version and Publish
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
 
 jobs:
-  build:
+  version-and-publish:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       packages: write
+
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
+
+      - name: Git Configuration
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Bump Version
+        run: |
+          npm version patch -m "Bump version to %s [skip ci]"
+          git push
+          git push --tags
 
       - name: Configure npm
         run: |
