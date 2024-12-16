@@ -1,26 +1,26 @@
 export default {
   sidebar: {
-    menu: 'Menu',
+    menu: 'Menü',
 
     tabs: {
-      profile: 'Profile',
-      security: 'Security',
-      settings: 'Settings',
-      playerList: 'Player list',
-      helpDesk: 'Help desk',
-      notifications: 'Notifications',
-      friends: 'Friends',
+      profile: 'Profil',
+      security: 'Güvenlik',
+      settings: 'Ayarlar',
+      playerList: 'Oyuncu Listesi',
+      helpDesk: 'Yardım Masası',
+      notifications: 'Bildirimler',
+      friends: 'Arkadaşlar',
     },
 
     profile: {
-      header: 'Profile',
+      header: 'Profil',
     },
   },
 
   userList: {
     tableHeaders: {
       id: 'ID',
-      characterName: 'Character name',
+      characterName: 'Karakter adı',
       level: 'Level',
     },
   },

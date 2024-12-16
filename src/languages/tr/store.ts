@@ -1,15 +1,15 @@
 export default {
-  title: 'Store',
-  checkout: 'Checkout',
-  buy: 'Buy',
+  title: 'Mağaza',
+  checkout: 'Ödeme Yap',
+  buy: 'Satın Al',
 
   categories: {
     food: {
-      food: 'Food',
-      drink: 'Drink',
+      food: 'Yiyecek',
+      drink: 'İçecek',
       tabs: {
-        food: 'Foods',
-        drink: 'Drinks',
+        food: 'Yiyecekler',
+        drink: 'İçecekler',
       },
     },
   },

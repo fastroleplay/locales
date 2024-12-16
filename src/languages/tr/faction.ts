@@ -1,10 +1,10 @@
 export default {
   ranks: {
-    leader: 'Leader',
-    member: 'Member'
+    leader: 'Lider',
+    member: 'Üye'
   },
   members: {
-    daysInFaction: '{{days}} days',
-    lastOnline: '{{days}} days',
+    daysInFaction: '{{days}} gün',
+    lastOnline: 'Son çevrimiçi {{days}} gün',
   },
 };

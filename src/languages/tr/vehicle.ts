@@ -1,21 +1,21 @@
 export default {
   emotes: {
-    lock: 'locks the vehicle.',
-    unlock: 'unlocks the vehicle.',
+    lock: 'aracı kilitler.',
+    unlock: 'aracın kilidini açar.',
 
-    engineOn: 'turns on the engine.',
-    engineOff: 'turns off the engine.',
+    engineOn: 'motoru çalıştırır.',
+    engineOff: 'motoru kapatır.',
 
-    lightsOn: 'turns on the lights.',
-    lightsOff: 'turns off the lights.',
+    lightsOn: 'farları açar.',
+    lightsOff: 'farları kapatır.',
   },
 
   fuel: {
-    grabNozzle: 'Grab nozzle with ~g~E~s~ key',
-    releaseNozzle: 'Release nozzle with ~g~E~s~ key',
-    nozzleInUse: 'Nozzle in use',
+    grabNozzle: '~g~E~s~ tuşuna basarak pompayı al',
+    releaseNozzle: '~g~E~s~ tuşuna basarak pompayı bırak',
+    nozzleInUse: 'Pompa kullanılıyor',
 
-    attachToVehicle: 'Attach to vehicle with ~g~E~s~ key',
-    detachFromVehicle: 'Detach from vehicle with ~g~E~s~ key',
+    attachToVehicle: '~g~E~s~ tuşuna basarak araca bağlan',
+    detachFromVehicle: '~g~E~s~ tuşuna basarak araçtan ayrıl',
   },
 };

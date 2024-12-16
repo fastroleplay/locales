@@ -1,9 +1,9 @@
 export default {
   usage: ':logo:',
-  noPermission: 'You do not have permission to use this command.',
-  message: 'message',
+  noPermission: 'Bu komutu kullanma izniniz yok.',
+  message: 'mesaj',
   player: 'idOrName',
   not: {
-    found: ':logo: Player not found.',
+    found: ':logo: Oyuncu bulunamadı.',
   },
 };

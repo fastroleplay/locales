@@ -1,10 +1,10 @@
 export default {
   tasks: {
-    EARN_MONEY: 'Earn Money',
-    COMPLETE_JOBS: 'Complete Jobs',
-    PERFECT_DELIVERY: 'Perfect Delivery',
-    TRAVEL_DISTANCE: 'Travel Distance',
-    WORK_HOURS: 'Work Hours',
-    complete: 'Task completed',
+    EARN_MONEY: 'Para Kazan',
+    COMPLETE_JOBS: 'Görevleri Tamamla',
+    PERFECT_DELIVERY: 'Mükemmel Teslimat',
+    TRAVEL_DISTANCE: 'Kat Edilen Mesafe',
+    WORK_HOURS: 'Çalışma Saatleri',
+    complete: 'Görev tamamlandı',
   },
 };

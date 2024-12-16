@@ -1,9 +1,9 @@
 export default {
-  placeholder: 'Type something...',
-  whispers: 'whispers',
-  shouts: 'shouts',
+  placeholder: 'Bir şey yazın...',
+  whispers: 'fısıldar',
+  shouts: 'bağırır',
   language: {
-    notFound: 'Language not found.',
-    notUnderstood: 'Speaking in a language that is not understood.',
+    notFound: 'Dil bulunamadı.',
+    notUnderstood: 'Anlaşılmayan bir dilde konuşuyor.',
   },
 };

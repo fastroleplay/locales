@@ -27,7 +27,7 @@ export default {
   },
   register: {
     header: 'Register',
-    email: 'Email',
+    email: 'E-mail',
     backToLoginButton: 'Back to login',
 
     messages: {
@@ -65,7 +65,7 @@ export default {
     description: "Let's create your character",
 
     steps: {
-      dna: 'Dna',
+      dna: 'DNA',
       look: 'Look',
       face: 'Face',
       wear: 'Wear',

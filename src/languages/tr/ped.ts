@@ -1,22 +1,22 @@
 export default {
-  notFound: 'Ped not found',
+  notFound: 'Ped bulunamadı',
   create: {
-    error: 'Failed to create ped',
-    success: 'Ped created successfully with name: {{name}}',
+    error: 'Ped oluşturulurken bir hata oluştu',
+    success: 'Ped başarıyla oluşturuldu, adı: {{name}}',
   },
   list: {
-    header: 'Ped list:',
+    header: 'Ped listesi:',
     item: 'ID: {{id}}',
-    empty: 'No peds nearby',
+    empty: 'Çevrede ped bulunmuyor',
   },
   delete: {
-    success: 'Ped deleted successfully with ID: {{id}}',
+    success: 'Ped başarıyla silindi, ID: {{id}}',
   },
 
   interaction: {
-    header: 'Ped Interaction',
-    description: 'Select an option to continue',
+    header: 'Pedle Etkileşim',
+    description: 'Devam etmek için bir seçenek seçin',
 
-    closeSubtitle: 'Press ESC to close',
+    closeSubtitle: 'Kapatmak için ESC tuşuna basın',
   },
 };
