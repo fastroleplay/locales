@@ -45,7 +45,7 @@ export default {
     money: 'Para',
     lastArea: 'Son görülme yeri',
 
-    play: 'OOyna',
+    play: 'Oyna',
 
     errors: {
       notFound: 'Karakter bulunamadı.',
