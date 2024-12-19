@@ -54,14 +54,14 @@ class I18nService {
       this.initialized = true;
       return this.i18n;
     } catch (error) {
-      console.error('Failed to initialize i18n:', error);
-      throw new Error('I18n initialization failed');
+      console.error('i18n başlatılamadı', error);
+      throw new Error('i18n başlatma başarısız oldu');
     }
   }
 
   public getI18n(): I18nInstance {
     if (!this.initialized) {
-      throw new Error('I18n service not initialized. Call initialize() first.');
+      throw new Error('i18n servisi başlatılmadı. Önce initialize() çağrılmalı.');
     }
     return this.i18n;
   }
