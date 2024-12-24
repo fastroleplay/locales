@@ -4,7 +4,7 @@ import i18next, { i18n as I18nInstance } from 'i18next';
 import en from './languages/en';
 import tr from './languages/tr';
 
-type SupportedLanguages = 'en' | 'tr';
+export type SupportedLanguages = 'en' | 'tr';
 
 interface I18nConfig {
   defaultLanguage: SupportedLanguages;
