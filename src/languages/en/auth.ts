@@ -1,6 +1,10 @@
 export default {
+  allRightsReserved: 'All rights reserved.',
   login: {
+    tabLabel: 'Authorization',
     header: 'Login',
+    description: 'Enter your login and password',
+
     username: 'Username',
     password: 'Password',
     passwordConfirmation: 'Password confirm',
@@ -26,7 +30,9 @@ export default {
     },
   },
   register: {
+    tabLabel: 'Registration',
     header: 'Register',
+    description: 'Create a new account',
     email: 'E-mail',
     backToLoginButton: 'Back to login',
 
@@ -34,9 +40,26 @@ export default {
       success: 'You have successfully registered.',
       error: 'An error occurred while registering.',
     },
+
+    submit: 'Register',
   },
   recovery: {
+    tabLabel: 'Recovery',
+    header: 'Reset Password',
+    description: 'Enter your email to reset password',
+
+    enterCodeDescription:
+      'The code will be sent to your email address/phone number. Please enter the code you received.',
+
     submit: 'Next',
+    send: 'Send',
+  },
+  newPassword: {
+    tabLabel: 'New Password',
+    header: 'New Password',
+    description: 'Enter your new password',
+
+    submit: 'Change Password',
   },
   characters: {
     title: 'Select character',
