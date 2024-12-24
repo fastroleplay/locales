@@ -1,4 +1,5 @@
 import auth from './auth';
+import bank from './bank';
 import chat from './chat';
 import dashboard from './dashboard';
 import store from './store';
@@ -11,6 +12,7 @@ import career from './career';
 export default {
   translation: {
     auth,
+    bank,
     chat,
     dashboard,
     store,
