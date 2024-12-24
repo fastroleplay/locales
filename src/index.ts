@@ -4,12 +4,12 @@ import i18next, { i18n as I18nInstance } from 'i18next';
 import en from './languages/en';
 import tr from './languages/tr';
 
+type SupportedLanguages = 'en' | 'tr';
+
 interface I18nConfig {
-  defaultLanguage: string;
+  defaultLanguage: SupportedLanguages;
   resources: Resource;
 }
-
-type SupportedLanguages = 'en' | 'tr';
 
 const DEFAULT_CONFIG: I18nConfig = {
   defaultLanguage: 'en',
@@ -50,7 +50,6 @@ class I18nService {
 
   public async initialize(
     config: Partial<I18nConfig> = {},
-    defaultLanguage?: SupportedLanguages,
   ): Promise<I18nInstance> {
     if (this.initialized) {
       return this.i18n;
@@ -63,7 +62,7 @@ class I18nService {
       };
 
       await this.i18n.init({
-        lng: defaultLanguage ?? mergedConfig.defaultLanguage,
+        lng: mergedConfig.defaultLanguage,
         resources: mergedConfig.resources,
         interpolation: {
           escapeValue: false,
