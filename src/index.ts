@@ -2,16 +2,20 @@ import type { Resource } from 'i18next';
 import i18next, { i18n as I18nInstance } from 'i18next';
 
 import en from './languages/en';
+import tr from './languages/tr';
 
 interface I18nConfig {
   defaultLanguage: string;
   resources: Resource;
 }
 
+type SupportedLanguages = 'en' | 'tr';
+
 const DEFAULT_CONFIG: I18nConfig = {
   defaultLanguage: 'en',
   resources: {
     en,
+    tr,
   },
 };
 
@@ -31,7 +35,23 @@ class I18nService {
     return I18nService.instance;
   }
 
-  public async initialize(config: Partial<I18nConfig> = {}): Promise<I18nInstance> {
+  public async changeLanguage(language: string): Promise<void> {
+    if (!this.initialized) {
+      throw new Error('I18n service not initialized. Call initialize() first.');
+    }
+
+    try {
+      await this.i18n.changeLanguage(language);
+    } catch (error) {
+      console.error('Failed to change language:', error);
+      throw new Error(`Language change failed for: ${language}`);
+    }
+  }
+
+  public async initialize(
+    config: Partial<I18nConfig> = {},
+    defaultLanguage?: SupportedLanguages,
+  ): Promise<I18nInstance> {
     if (this.initialized) {
       return this.i18n;
     }
@@ -43,7 +63,7 @@ class I18nService {
       };
 
       await this.i18n.init({
-        lng: mergedConfig.defaultLanguage,
+        lng: defaultLanguage ?? mergedConfig.defaultLanguage,
         resources: mergedConfig.resources,
         interpolation: {
           escapeValue: false,
@@ -66,11 +86,17 @@ class I18nService {
     return this.i18n;
   }
 
-  public t(...args: Parameters<typeof i18next.t>): ReturnType<typeof i18next.t> {
+  public t(
+    ...args: Parameters<typeof i18next.t>
+  ): ReturnType<typeof i18next.t> {
     return this.i18n.t(...args);
   }
 }
 
+export const changeLanguage = (language: SupportedLanguages) =>
+  i18nService.changeLanguage(language);
 export const i18nService = I18nService.getInstance();
-export const t = (...args: Parameters<typeof i18next.t>) => i18nService.t(...args);
-export const initialize = (config?: Partial<I18nConfig>) => i18nService.initialize(config);
+export const t = (...args: Parameters<typeof i18next.t>) =>
+  i18nService.t(...args);
+export const initialize = (config?: Partial<I18nConfig>) =>
+  i18nService.initialize(config);
