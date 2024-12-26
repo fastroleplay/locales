@@ -22,7 +22,7 @@ export default {
       passwordInvalid: 'Password is invalid',
     },
 
-    terms: 'I accept the <1>rules of the server</1>',
+    terms: 'I accept the rules of the server',
 
     messages: {
       success: 'You have successfully logged in.',
