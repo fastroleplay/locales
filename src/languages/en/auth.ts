@@ -186,4 +186,42 @@ export default {
       finish: 'Finish',
     },
   },
+  rules: {
+    modal: {
+      title: 'Server Rules',
+      description: 'Please read our server rules carefully before joining.',
+    },
+    age: {
+      title: 'Age Requirement',
+      description: 'You must be at least 15 years old to join this server.',
+    },
+    general: {
+      title: 'General Rules',
+      respectful: 'Be respectful to all members',
+      noHarassment: 'No harassment, hate speech, or bullying',
+      noSpam: 'No spamming or self-promotion',
+      noNSFW: 'No NSFW content',
+      useChannels: 'Use appropriate channels for discussions',
+      followToS: "Follow Discord's Terms of Service",
+    },
+    voice: {
+      title: 'Voice Chat Rules',
+      clearMic: 'Use a clear microphone',
+      noVoiceChangers: 'No voice changers or soundboards',
+      noMusic: 'No music playing through microphone',
+      noNoise: 'Keep background noise to a minimum',
+    },
+    gaming: {
+      title: 'Gaming Rules',
+      noCheating: 'No cheating or exploiting',
+      beFair: 'Be fair and sportsmanlike',
+      reportBugs: 'Report bugs to moderators',
+      followChannelRules: 'Follow specific game channel rules',
+    },
+    consequences: {
+      title: 'Consequences',
+      description:
+        'Violation of these rules may result in warnings, temporary mutes, or permanent bans depending on the severity and frequency of the violation.',
+    },
+  },
 };
