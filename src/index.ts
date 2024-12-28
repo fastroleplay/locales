@@ -109,5 +109,8 @@ export const changeLanguage = (language: SupportedLanguages) =>
 export const i18nService = I18nService.getInstance();
 export const t = (...args: Parameters<typeof i18next.t>) =>
   i18nService.t(...args);
-export const initialize = (config?: Partial<I18nConfig>) =>
-  i18nService.initialize(config);
+
+export const initialize = (
+  config?: Partial<I18nConfig>,
+  languageOutput?: LanguageConfig,
+) => i18nService.initialize(config, languageOutput);
