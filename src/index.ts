@@ -24,7 +24,7 @@ const DEFAULT_CONFIG: I18nConfig = {
 const WEB_CONFIG: I18nConfig = {
   defaultLanguage: 'en',
   resources: {
-    webEn,
+    en: webEn,
   },
 };
 
