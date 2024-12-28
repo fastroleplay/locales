@@ -5,6 +5,7 @@ import en from './languages/en';
 import tr from './languages/tr';
 
 import webEn from './languages/web-en';
+import webTr from './languages/web-tr';
 
 export type SupportedLanguages = 'en' | 'tr';
 
@@ -25,6 +26,7 @@ const WEB_CONFIG: I18nConfig = {
   defaultLanguage: 'en',
   resources: {
     en: webEn,
+    tr: webTr,
   },
 };
 

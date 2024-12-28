@@ -1,4 +1,5 @@
 export default {
+  howToPlay: 'How to play?',
   startPlaying: {
     title: 'Start Playing',
     altText: 'Game availability',
