@@ -21,12 +21,14 @@ const DEFAULT_CONFIG: I18nConfig = {
   },
 };
 
-export const WEB_CONFIG: I18nConfig = {
+const WEB_CONFIG: I18nConfig = {
   defaultLanguage: 'en',
   resources: {
     webEn,
   },
 };
+
+type LanguageConfig = 'default' | 'web';
 
 class I18nService {
   private static instance: I18nService;
@@ -59,16 +61,17 @@ class I18nService {
 
   public async initialize(
     config: Partial<I18nConfig> = {},
+    languageOutput: LanguageConfig = 'default',
   ): Promise<I18nInstance> {
     if (this.initialized) {
       return this.i18n;
     }
 
     try {
-      const mergedConfig = {
-        ...DEFAULT_CONFIG,
-        ...config,
-      };
+      const mergedConfig =
+        languageOutput === 'default'
+          ? { ...DEFAULT_CONFIG, ...config }
+          : { ...WEB_CONFIG, ...config };
 
       await this.i18n.init({
         lng: mergedConfig.defaultLanguage,
