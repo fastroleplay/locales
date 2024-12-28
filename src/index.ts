@@ -4,6 +4,8 @@ import i18next, { i18n as I18nInstance } from 'i18next';
 import en from './languages/en';
 import tr from './languages/tr';
 
+import webEn from './languages/en';
+
 export type SupportedLanguages = 'en' | 'tr';
 
 interface I18nConfig {
@@ -16,6 +18,13 @@ const DEFAULT_CONFIG: I18nConfig = {
   resources: {
     en,
     tr,
+  },
+};
+
+export const WEB_CONFIG: I18nConfig = {
+  defaultLanguage: 'en',
+  resources: {
+    webEn,
   },
 };
 
