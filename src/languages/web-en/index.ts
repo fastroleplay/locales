@@ -6,6 +6,7 @@ import faq from './faq';
 import stats from './stats';
 import updates from './updates';
 import socials from './socials';
+import cookie from './cookie';
 
 export default {
   translation: {
@@ -17,5 +18,6 @@ export default {
     stats,
     updates,
     socials,
+    cookie,
   },
 };

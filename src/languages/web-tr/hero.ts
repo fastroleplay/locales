@@ -1,6 +1,6 @@
 export default {
   description:
-    'Bir karakter yaratmak - ister çete üyesi, polis memuru,\ndoktor, işçi, mafya patronu, asker veya suç figürü olsun -\ntamamen sizin elinizdedir. Hiçbir sınır yoktur; bu sanal dünyada\nkendi yolunuzu seçmekte ve kendi hikayenizi yazmakta özgürsünüz!',
+    'Bir çete üyesi, polis memuru, doktor, işçi, mafya babası, asker veya kriminal bir karakter tasarlamak tamamen sizin ellerinizde. Sınırlar yok, yolunuzu seçmekte ve bu sanal dünyada kendi hikayenizi yazmakta özgürsünüz!',
 
   servers: {
     ls: {
