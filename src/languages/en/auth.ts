@@ -49,7 +49,7 @@ export default {
     description: 'Enter your email to reset password',
 
     enterCodeDescription:
-      'The code will be sent to your email address/phone number. Please enter the code you received.',
+      'The code will be sent to your email address. Please open link in your email.',
 
     submit: 'Next',
     send: 'Send',

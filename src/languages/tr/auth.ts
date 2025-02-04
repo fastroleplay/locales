@@ -36,8 +36,17 @@ export default {
     },
   },
   recovery: {
+    header: 'Şifremi sıfırla',
+    description:
+      'E-postanıza kod gönderilecektir. Lütfen e-posta adresinize tıklayın.',
+
+    enterCodeDescription:
+      'Kod e-postanıza gönderilecektir. Lütfen e-posta adresinize tıklayın.',
+
     submit: 'İleri',
+    send: 'Gönder',
   },
+
   characters: {
     title: 'Karakter Seç',
     description: 'Oynamak için bir karakter seçin',
@@ -62,7 +71,7 @@ export default {
   },
   characterWizard: {
     title: 'Karakter oluştur',
-    description: "Şimdi karakterini oluşturalım",
+    description: 'Şimdi karakterini oluşturalım',
 
     steps: {
       dna: 'DNA',
