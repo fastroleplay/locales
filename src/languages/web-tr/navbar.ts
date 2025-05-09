@@ -1,6 +1,6 @@
 export default {
   home: 'Ana Sayfa',
-  forum: 'Forum',
+  hub: 'Hub',
   about: 'Hakkımızda',
   donate: 'Yükleme',
   discord: 'Discord',
