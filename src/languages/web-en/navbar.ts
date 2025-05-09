@@ -1,6 +1,6 @@
 export default {
   home: 'Home',
-  forum: 'Forum',
+  hub: 'Hub',
   about: 'About',
   donate: 'Donate',
   discord: 'Discord',
