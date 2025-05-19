@@ -8,6 +8,7 @@ import vehicle from './vehicle';
 import command from './command';
 import faction from './faction';
 import career from './career';
+import api from './api';
 
 export default {
   translation: {
@@ -21,5 +22,6 @@ export default {
     command,
     career,
     faction,
+    api,
   },
 };

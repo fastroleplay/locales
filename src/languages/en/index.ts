@@ -8,10 +8,12 @@ import vehicle from './vehicle';
 import command from './command';
 import faction from './faction';
 import career from './career';
+import api from './api';
 
 export default {
   translation: {
     auth,
+    api,
     bank,
     chat,
     dashboard,
