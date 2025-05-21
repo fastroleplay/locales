@@ -1,4 +1,5 @@
 export default {
+  allRightsReserved: 'Tüm hakları saklıdır',
   login: {
     header: 'Giriş',
     username: 'Kullanıcı adı',
@@ -24,6 +25,9 @@ export default {
       success: 'Başarıyla giriş yaptınız.',
       error: 'Giriş yaparken bir hata oluştu.',
     },
+
+    tabLabel: 'Giriş',
+    description: 'Hesabınıza giriş yapın',
   },
   register: {
     header: 'Kayıt ol',
@@ -34,6 +38,10 @@ export default {
       success: 'Başarıyla kayıt oldunuz.',
       error: 'Kayıt olurken bir hata oluştu.',
     },
+
+    tabLabel: 'Kayıt Ol',
+    description: 'Yeni bir hesap oluşturun',
+    submit: 'Kayıt Ol',
   },
   recovery: {
     header: 'Şifremi sıfırla',
@@ -45,6 +53,8 @@ export default {
 
     submit: 'İleri',
     send: 'Gönder',
+
+    tabLabel: 'Şifre Kurtarma',
   },
 
   characters: {
@@ -170,6 +180,50 @@ export default {
       back: 'Geri',
       next: 'İleri',
       finish: 'Bitir',
+    },
+  },
+  newPassword: {
+    tabLabel: 'Yeni Şifre',
+    header: 'Yeni Şifre Oluştur',
+    description: 'Lütfen yeni şifrenizi belirleyin',
+    submit: 'Şifreyi Değiştir'
+  },
+  rules: {
+    modal: {
+      title: 'Sunucu Kuralları',
+      description: 'Lütfen katılmadan önce sunucu kurallarımızı dikkatlice okuyun.',
+    },
+    age: {
+      title: 'Yaş Gerekliliği',
+      description: 'Bu sunucuya katılmak için en az 15 yaşında olmalısınız.',
+    },
+    general: {
+      title: 'Genel Kurallar',
+      respectful: 'Tüm üyelere saygılı olun',
+      noHarassment: 'Taciz, nefret söylemi veya zorbalık yok',
+      noSpam: 'Spam veya kendi tanıtımınızı yapmayın',
+      noNSFW: 'NSFW içerik yok',
+      useChannels: 'Tartışmalar için uygun kanalları kullanın',
+      followToS: "Discord'un Hizmet Şartlarına uyun",
+    },
+    voice: {
+      title: 'Sesli Sohbet Kuralları',
+      clearMic: 'Net bir mikrofon kullanın',
+      noVoiceChangers: 'Ses değiştirici veya ses kartı kullanmayın',
+      noMusic: 'Mikrofon aracılığıyla müzik çalmayın',
+      noNoise: 'Arka plan gürültüsünü minimumda tutun',
+    },
+    gaming: {
+      title: 'Oyun Kuralları',
+      noCheating: 'Hile veya istismar yapma',
+      beFair: 'Adil ve sportmen ol',
+      reportBugs: 'Hataları moderatörlere bildirin',
+      followChannelRules: 'Özel oyun kanalı kurallarına uyun',
+    },
+    consequences: {
+      title: 'Sonuçlar',
+      description:
+        'Bu kuralların ihlali, ihlalin ciddiyetine ve sıklığına bağlı olarak uyarılar, geçici susturmalar veya kalıcı yasaklamalarla sonuçlanabilir.',
     },
   },
 };
