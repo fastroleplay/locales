@@ -9,6 +9,7 @@ import command from './command';
 import faction from './faction';
 import career from './career';
 import api from './api';
+import donate from './donate';
 
 export default {
   translation: {
@@ -23,5 +24,6 @@ export default {
     command,
     career,
     faction,
+    donate
   },
 };

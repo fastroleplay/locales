@@ -17,6 +17,12 @@ export default {
     },
   },
 
+  settings: {
+    uiPreferences: 'UI Preferences',
+    support: 'Support',
+    myTickets: 'My Tickets',
+  },
+
   userList: {
     tableHeaders: {
       id: 'ID',
