@@ -89,14 +89,14 @@ export default {
     numberPlateNotAvailable: 'The number plate is not available.',
     numberPlateNotAllowed: 'The number plate is not allowed.',
     teleportedToYou: 'Teleported vehicle to you',
-    foundVehicles: 'Found {count} vehicles',
-    vehicleInfo: '{id} - {plate}',
+    foundVehicles: 'Found {{count}} vehicles',
+    vehicleInfo: '{{id}} - {plate}',
     teleportedToVehicle: 'Teleported to vehicle',
     failedToCreate: 'Failed to create vehicle',
   },
 
   info: {
-    vehicle: '{#fab432}[Vehicle] Owner: {ownerName} - Plate: {plate} - Tax: {tax}{/color}',
-    rental: '{#fab432}[Rental Vehicle] Owner: {ownerName} - Plate: {plate} - Tax: {tax}{/color}',
+    vehicle: '{#fab432}[Vehicle] Owner: {{ownerName}} - Plate: {{plate}} - Tax: {{tax}}{/color}',
+    rental: '{#fab432}[Rental Vehicle] Owner: {{ownerName}} - Plate: {{plate}} - Tax: {{tax}}{/color}',
   },
 };
