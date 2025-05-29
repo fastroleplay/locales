@@ -1,8 +1,6 @@
 import type { Resource } from 'i18next';
 import i18next, { i18n as I18nInstance } from 'i18next';
 
-import en from './languages/en';
-import tr from './languages/tr';
 
 import webEn from './languages/web-en';
 import webTr from './languages/web-tr';
@@ -17,20 +15,12 @@ interface I18nConfig {
 const DEFAULT_CONFIG: I18nConfig = {
   defaultLanguage: 'en',
   resources: {
-    en,
-    tr,
-  },
-};
-
-const WEB_CONFIG: I18nConfig = {
-  defaultLanguage: 'en',
-  resources: {
     en: webEn,
     tr: webTr,
   },
 };
 
-type LanguageConfig = 'default' | 'web';
+type LanguageConfig = 'web';
 
 class I18nService {
   private static instance: I18nService;
@@ -63,17 +53,14 @@ class I18nService {
 
   public async initialize(
     config: Partial<I18nConfig> = {},
-    languageOutput: LanguageConfig = 'default',
+    languageOutput: LanguageConfig = 'web',
   ): Promise<I18nInstance> {
     if (this.initialized) {
       return this.i18n;
     }
 
     try {
-      const mergedConfig =
-        languageOutput === 'default'
-          ? { ...DEFAULT_CONFIG, ...config }
-          : { ...WEB_CONFIG, ...config };
+      const mergedConfig = { ...DEFAULT_CONFIG, ...config };
 
       await this.i18n.init({
         lng: mergedConfig.defaultLanguage,
