@@ -31,7 +31,7 @@ export default {
     card: {
       title: 'Authorization',
       description:
-        "You will need to create an account on the FiveM platform or log in to an existing account, it won't take long to do so",
+        "You will need to create an account on the RageMP platform or log in to an existing account, it won't take long to do so",
     },
     actions: {
       register: 'Register',
