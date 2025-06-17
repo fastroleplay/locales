@@ -31,7 +31,7 @@ export default {
     card: {
       title: 'Yetkilendirme',
       description:
-        'FiveM platformunda bir hesap oluşturmanız veya mevcut hesabınıza giriş yapmanız gerekecektir, bu işlem uzun sürmeyecektir',
+        'RageMP platformunda bir hesap oluşturmanız veya mevcut hesabınıza giriş yapmanız gerekecektir, bu işlem uzun sürmeyecektir',
     },
     actions: {
       register: 'Kayıt Ol',
